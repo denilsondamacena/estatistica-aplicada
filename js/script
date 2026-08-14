@@ -66,6 +66,10 @@ function loadContent(e, sectionId) {
         const targetSection = document.getElementById(`content-${sectionId}`);
         if (targetSection) {
             targetSection.classList.add('active');
+
+            if (window.MathJax && window.MathJax.typesetPromise) {
+                window.MathJax.typesetPromise([targetSection]);
+            }
         }
     }, 1000);
 }
