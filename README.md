@@ -13,9 +13,14 @@
 Para manter o repositório limpo e funcional, o projeto foi organizado nas seguintes pastas:
 
 ```text
-.
-├── 📁 exercicios/    # Lista de exercícios e resoluções práticas em Python
-├── 📁 projeto/       # Guia interativo e aplicação Web
+├── 📁 exercicios    # Lista de exercícios e resoluções práticas em Python
+├── 📁 projeto
+│   ├── 📁 css
+│   │   └── 📄 style.css            
+│   ├── 📁 js
+│   │   └── 📄 script.js          
+│   ├── 📄 index.html
+│   └── 📄 README.md                
 └── 📄 README.md      # Documentação principal do repositório
 ```
 ---
