@@ -1,0 +1,455 @@
+<!--====================================================================
+DESENVOLVIDO POR: Denilson Silva Damacena
+ANO: 2026
+--------------------------------------------------------------------
+⠀⠀⠀⠀⠀⢸⠓⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⠀⠀⠑⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠙⢤⡷⣤⣦⣀⠤⠖⠚⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣠⡿⠢⢄⡀⠀⡇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠸⠷⣶⠂⠀⠀⠀⣀⣀⠀⠀⠀
+⢸⣃⠀⠀⠉⠳⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⢉⡭⠋
+⠀⠘⣆⠀⠀⠀⠁⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀
+⠀⠀⠘⣦⠆⠀⠀⢀⡎⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⣠⠔⠋⠀⠀⠀⠀
+⠀⠀⠀⡏⠀⠀⣆⠘⣄⠸⢧⠀⠀⠀⠀⢀⣠⠖⢻⠀⠀⠀⣿⢥⣄⣀⣀⣀⠀⠀
+⠀⠀⢸⠁⠀⠀⡏⢣⣌⠙⠚⠀⠀⠠⣖⡛⠀⣠⠏⠀⠀⠀⠇⠀⠀⠀⠀⢙⣣⠄
+⠀⠀⢸⡀⠀⠀⠳⡞⠈⢻⠶⠤⣄⣀⣈⣉⣉⣡⡔⠀⠀⢀⠀⠀⣀⡤⠖⠚⠀⠀
+⠀⠀⡼⣇⠀⠀⠀⠙⠦⣞⡀⠀⢀⡏⠀⢸⣣⠞⠀⠀⠀⡼⠚⠋⠁⠀⠀⠀⠀⠀
+⠀⢰⡇⠙⠀⠀⠀⠀⠀⠀⠉⠙⠚⠒⠚⠉⠀⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢧⡀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⣶⣶⣿⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠉⠀⠀⠀⠙⢿⣳⠞⠳⡄⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠹⣄⣀⡤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+====================================================================-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatística Aplicada</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="https://api.iconify.design/lucide:bar-chart-3.svg?color=%23ff00ff">
+</head>
+
+<body>
+
+    <header class="header-90s">
+        <div class="logo-box">
+            <span class="logo-text">STATS</span>
+            <span class="logo-sub">PYTHON // ADS</span>
+        </div>
+        <div class="header-banner">
+            <h1>ESTATÍSTICA APLICADA COM PYTHON</h1>
+            <p>GUIA DE CÓDIGOS & CONCEITOS PARA O CURSO DE ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</p>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <nav class="sidebar-menu">
+            <div class="win95-calc">
+                <div class="calc-title">
+                    <span>STAT_CALC.EXE</span>
+                    <span>[X]</span>
+                </div>
+                <input type="text" id="calc-data" class="calc-input" placeholder="Ex: 5, 7, 8, 9, 10">
+                <button class="calc-btn" onclick="runWinCalc()">CALCULAR ESTATÍSTICA</button>
+                <div id="calc-output" class="calc-results">
+                    Aguardando dados...
+                </div>
+            </div>
+            <h2>Navegação</h2>
+            <button class="colab-export-btn" onclick="exportToColabNotebook()">
+                💾 BAIXAR NOTEBOOK (.IPYNB)
+            </button>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="🔍 Buscar conteúdo..." onkeyup="filterMenu()">
+            </div>
+            <ul>
+                <li><button class="menu-btn active" onclick="loadContent(event, 1)">1. Comandos Básicos</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 2)">2. Funções Nativas</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 3)">3. Biblioteca Statistics</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 4)">4. Biblioteca NumPy</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 5)">5. Biblioteca Pandas</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 6)">6. Matplotlib</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 7)">7. Seaborn</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 8)">8. SciPy</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 9)">9. Geração de Dados (Random)</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 10)">10. Conceitos Estatísticos</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 11)">11. Kit Recomendado Colab</button></li>
+                <li><button class="menu-btn" onclick="loadContent(event, 12)">12. Roteiro de Aprendizado</button></li>
+            </ul>
+        </nav>
+
+        <main class="content-area">
+
+            <div id="retro-loader" class="crt-monitor">
+                <div class="monitor-screen">
+                    <div class="loader-content">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/da9f8649-8d19-4c2b-b05a-d90030b5379a/dgvsjw9-cf0faf00-135d-4ddf-9aae-e804f3a03dff.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9kYTlmODY0OS04ZDE5LTRjMmItYjA1YS1kOTAwMzBiNTM3OWEvZGd2c2p3OS1jZjBmYWYwMC0xMzVkLTRkZGYtOWFhZS1lODA0ZjNhMDNkZmYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6Mxt8I6oaroycEuVyT8rRsQmvYygFKaHX579qI7D_Fw"
+                            alt="Python Loading..." class="python-gif">
+                        <div class="loading-bar">
+                            <div class="loading-fill"></div>
+                        </div>
+                        <p class="loading-text">CARREGANDO MÓDULO PYTHON... <span class="blink">_</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <section id="content-1" class="content-section active">
+                <h2>1. Palavras reservadas e comandos básicos do Python</h2>
+                <p>Fundamentais para a construção de scripts e manipulação de fluxos nos exercícios de estatística.</p>
+
+                <table class="table-90s">
+                    <thead>
+                        <tr>
+                            <th>Palavra / Comando</th>
+                            <th>Para que serve</th>
+                            <th>Exemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>import</code></td>
+                            <td>Importar bibliotecas</td>
+                            <td><code>import numpy as np</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>from</code></td>
+                            <td>Importar módulos específicos</td>
+                            <td><code>from math import sqrt</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>as</code></td>
+                            <td>Criar alias (apelido)</td>
+                            <td><code>import pandas as pd</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>if / elif / else</code></td>
+                            <td>Estruturas condicionais</td>
+                            <td><code>if media >= 7:</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>for / while</code></td>
+                            <td>Laços de repetição</td>
+                            <td><code>for nota in notas:</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>in</code></td>
+                            <td>Verificar / percorrer elementos</td>
+                            <td><code>for x in dados:</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>def / return</code></td>
+                            <td>Definir e retornar funções</td>
+                            <td><code>def media(x): return sum(x)/len(x)</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>True / False / None</code></td>
+                            <td>Valores booleanos e ausência de valor</td>
+                            <td><code>aprovado = True</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>and / or / not</code></td>
+                            <td>Operadores lógicos</td>
+                            <td><code>x > 5 and x < 10</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="content-2" class="content-section">
+                <h2>2. Funções nativas do Python importantes para Estatística</h2>
+                <p>Funções operacionais simples embutidas no próprio core da linguagem.</p>
+
+                <h3>Agregação e Operações</h3>
+                <pre class="code-box"><code>notas = [7, 8, 6, 9, 10]
+
+print("Quantidade (len):", len(notas))
+print("Soma (sum):", sum(notas))
+print("Maior valor (max):", max(notas))
+print("Menor valor (min):", min(notas))
+print("Valores ordenados (sorted):", sorted(notas))
+
+media = sum(notas) / len(notas)
+print("Média Aritmética:", media)</code></pre>
+            </section>
+
+            <section id="content-3" class="content-section">
+                <h2>3. Biblioteca statistics</h2>
+                <p>Biblioteca padrão ideal para conceitos básicos de Estatística Descritiva.</p>
+
+                <table class="table-90s">
+                    <thead>
+                        <tr>
+                            <th>Função</th>
+                            <th>Conceito Estatístico</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>mean()</code></td>
+                            <td>Média aritmética</td>
+                        </tr>
+                        <tr>
+                            <td><code>median()</code></td>
+                            <td>Mediana</td>
+                        </tr>
+                        <tr>
+                            <td><code>mode() / multimode()</code></td>
+                            <td>Moda / Múltiplas modas</td>
+                        </tr>
+                        <tr>
+                            <td><code>variance() / pvariance()</code></td>
+                            <td>Variância amostral / populacional</td>
+                        </tr>
+                        <tr>
+                            <td><code>stdev() / pstdev()</code></td>
+                            <td>Desvio padrão amostral / populacional</td>
+                        </tr>
+                        <tr>
+                            <td><code>quantiles()</code></td>
+                            <td>Separação por quantis (quartis, decis, etc)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <pre class="code-box"><code>import statistics as statistics
+
+notas = [5, 6, 7, 7, 8, 9, 10]
+
+print("Média:", statistics.mean(notas))
+print("Mediana:", statistics.median(notas))
+print("Moda:", statistics.mode(notas))
+print("Variância Amostral:", statistics.variance(notas))
+print("Desvio Padrão Amostral:", statistics.stdev(notas))</code></pre>
+            </section>
+
+            <section id="content-4" class="content-section">
+                <h2>4. Biblioteca NumPy</h2>
+                <p>Essencial para computação numérica, manipulação de vetores, matrizes e álgebra linear.</p>
+
+                <pre class="code-box"><code>import numpy as np
+
+notas = np.array([5, 6, 7, 7, 8, 9, 10])
+
+print("Média:", np.mean(notas))
+print("Mediana:", np.median(notas))
+print("Mínimo / Máximo:", np.min(notas), "/", np.max(notas))
+
+print("Variância Amostral (ddof=1):", np.var(notas, ddof=1))
+print("Desvio Padrão Amostral (ddof=1):", np.std(notas, ddof=1))
+
+print("Quartil 50% (Mediana):", np.percentile(notas, 50))</code></pre>
+            </section>
+
+            <section id="content-5" class="content-section">
+                <h2>5. Pandas</h2>
+                <p>A ferramenta central para manipulação e análise de dados estruturados em tabelas (DataFrames).</p>
+
+                <pre class="code-box"><code>import pandas as pd
+
+dados = {
+    "Aluno": ["Ana", "Bruno", "Carlos", "Daniela"],
+    "Nota": [8, 7, 9, 6],
+    "Faltas": [2, 0, 4, 1]
+}
+
+df = pd.DataFrame(dados)
+
+print(df.head(2))
+print(df.info())
+print(df.describe())
+
+print("Média de notas:", df["Nota"].mean())
+print("Frequência de faltas:\n", df["Faltas"].value_counts())</code></pre>
+            </section>
+
+            <section id="content-6" class="content-section">
+                <h2>6. Matplotlib</h2>
+                <p>Biblioteca base para visualização gráfica de dados estatísticos.</p>
+
+                <div class="interactive-chart-box">
+                    <h3>📊 Manipulação de Gráfico em Tempo Real</h3>
+                    <p>Altere a frequência dos dados abaixo e clique em <b>"ATUALIZAR GRÁFICO"</b> para ver o Histograma
+                        se modificar:</p>
+
+                    <div class="chart-container">
+                        <canvas id="matplotlibChart"></canvas>
+                    </div>
+
+                    <div class="chart-controls">
+                        <div class="control-group">
+                            <label>Nota 1:</label>
+                            <input type="number" id="freq-1" value="1" min="0" max="10">
+                        </div>
+                        <div class="control-group">
+                            <label>Nota 2:</label>
+                            <input type="number" id="freq-2" value="2" min="0" max="10">
+                        </div>
+                        <div class="control-group">
+                            <label>Nota 3:</label>
+                            <input type="number" id="freq-3" value="3" min="0" max="10">
+                        </div>
+                        <div class="control-group">
+                            <label>Nota 4:</label>
+                            <input type="number" id="freq-4" value="2" min="0" max="10">
+                        </div>
+                        <div class="control-group">
+                            <label>Nota 5:</label>
+                            <input type="number" id="freq-5" value="1" min="0" max="10">
+                        </div>
+                        <div class="control-group">
+                            <label>Nota 6:</label>
+                            <input type="number" id="freq-6" value="1" min="0" max="10">
+                        </div>
+                    </div>
+
+                    <button class="dos-btn" style="width: 100%; margin-top: 10px;" onclick="updateChartData()">
+                        ⚡ ATUALIZAR GRÁFICO
+                    </button>
+                </div>
+
+                <pre class="code-box"><code>import matplotlib.pyplot as plt
+
+notas = [5, 6, 6, 7, 7, 7, 8, 8, 9, 10]
+
+plt.figure(figsize=(6, 4))
+plt.hist(notas, bins=5, color='purple', edgecolor='yellow')
+plt.title("Distribuição das Notas")
+plt.xlabel("Nota")
+plt.ylabel("Frequência")
+plt.grid(True)
+plt.show()
+
+plt.boxplot(notas)
+plt.title("Boxplot de Notas")
+plt.show()</code></pre>
+            </section>
+
+            <section id="content-7" class="content-section">
+                <h2>7. Seaborn</h2>
+                <p>Interface gráfica de alto nível construída sobre o Matplotlib, focada em visualização estatística.
+                </p>
+
+                <pre class="code-box"><code>import seaborn as sns
+import pandas as pd
+
+df = pd.DataFrame({"Nota": [5, 6, 6, 7, 7, 7, 8, 8, 9, 10]})
+
+sns.histplot(data=df, x="Nota", kde=True, color="cyan")</code></pre>
+            </section>
+
+            <section id="content-8" class="content-section">
+                <h2>8. SciPy</h2>
+                <p>Utilizado para probabilidade avançada, testes estatísticos e inferência.</p>
+
+                <pre class="code-box"><code>from scipy import stats</code></pre>
+            </section>
+
+            <section id="content-9" class="content-section">
+                <h2>9. Random — Geração e Simulação de Dados</h2>
+                <p>Criação de conjuntos de dados simulados para testes de hipóteses e exercícios.</p>
+
+                <pre class="code-box"><code>import numpy as np
+
+dados_discretos = np.random.randint(low=0, high=11, size=20)
+dados_continuos = np.random.normal(loc=70, scale=10, size=100)
+
+print("Amostra aleatória normal (primeiros 5):", dados_continuos[:5])</code></pre>
+            </section>
+
+            <section id="content-10" class="content-section">
+                <h2>10. Mapeamento de Conceitos Estatísticos vs. Python</h2>
+
+                <div class="concept-block">
+                    <h3>1. Estatística Descritiva</h3>
+                    <p>Média, Mediana, Moda, Variância, Desvio Padrão, Quartis, Boxplot e Histogramas.</p>
+                </div>
+
+                <div class="concept-block">
+                    <h3>2. Probabilidade</h3>
+                    <p>Espaço Amostral, Probabilidade Condicional, Distribuições Binomial e Normal.</p>
+                </div>
+
+                <div class="concept-block">
+                    <h3>3. Correlação e Regressão</h3>
+                    <p>Covariância, Pearson, Regressão Linear Simples, Coeficiente $R^2$.</p>
+                </div>
+
+                <div class="concept-block">
+                    <h3>4. Inferência Estatística</h3>
+                    <p>Intervalos de Confiança, Hipótese Nula ($H_0$), Valor-p, Testes t, Qui-Quadrado e ANOVA.</p>
+                </div>
+            </section>
+
+            <section id="content-11" class="content-section">
+                <h2>11. O "Kit" Padrão de Importação para Google Colab</h2>
+                <p>Cabeçalho padrão recomendado para iniciar quase todos os notebooks da disciplina:</p>
+
+                <pre class="code-box"><code>import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import statistics as statistics
+from scipy import stats
+
+plt.style.use('seaborn-v0_8-whitegrid')
+%matplotlib inline</code></pre>
+
+                <div class="note-box">
+                    <strong>⚠️ Dica importante:</strong> Evite utilizar <code>import statistics as stats</code> e
+                    <code>from scipy import stats</code> no mesmo arquivo para evitar sobreposição de nomes de aliases.
+                </div>
+            </section>
+
+            <section id="content-12" class="content-section">
+                <h2>12. Roteiro de Aprendizado Recomendado em ADS</h2>
+                <ol class="roadmap-list">
+                    <li><strong>Passo 1:</strong> Lógica básica no Python (Variáveis, Listas, Estruturas de controle)
+                    </li>
+                    <li><strong>Passo 2:</strong> Funções nativas de agregação (<code>sum</code>, <code>len</code>,
+                        <code>max</code>, <code>min</code>)
+                    </li>
+                    <li><strong>Passo 3:</strong> Estatística descritiva elementar com a biblioteca
+                        <code>statistics</code>
+                    </li>
+                    <li><strong>Passo 4:</strong> Vetores e cálculos numéricos com <code>NumPy</code></li>
+                    <li><strong>Passo 5:</strong> Leitura e manipulação de tabelas via <code>Pandas</code></li>
+                    <li><strong>Passo 6 & 7:</strong> Construção e interpretação visual com <code>Matplotlib</code> e
+                        <code>Seaborn</code>
+                    </li>
+                    <li><strong>Passo 8 & 9:</strong> Simulações aleatórias e Modelagem Probabilística</li>
+                    <li><strong>Passo 10 & 11:</strong> Testes de hipóteses e Inferência com <code>SciPy</code></li>
+                    <li><strong>Passo 12:</strong> Análise de Regressão e projetos integrados com conjuntos de dados
+                        reais</li>
+                </ol>
+            </section>
+
+            <div class="dos-terminal">
+                <div class="dos-header">
+                    <span>MS-DOS Prompt - Python STATS v1.0</span>
+                    <span id="sound-toggle" style="cursor:pointer;" onclick="toggleSound()">🔊 SOM [ON]</span>
+                </div>
+                <p>Digite uma lista de números Python para testar cálculos no ar:</p>
+                <div class="dos-input-group">
+                    <span>C:\PYTHON></span>
+                    <input type="text" id="dos-code" class="dos-input" value="[12, 15, 18, 22, 30]">
+                    <button class="dos-btn" onclick="runDosTerminal()">EXECUTAR [ENTER]</button>
+                </div>
+                <div id="dos-result" class="dos-output">
+                    C:\> Prontos para execução...
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer-90s">
+        <p>Denilson Silva Damacena | 2026</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
