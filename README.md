@@ -10,6 +10,7 @@
 Estatística Aplicada com Python</h1>
 
 Um guia interativo e responsivo de códigos, conceitos e visualizações para a disciplina de Estatística Aplicada no curso de Análise e Desenvolvimentos de Sistemas.
+> **Nota:** Este guia foi desenvolvido com fins estritamente acadêmicos para estudo de aplicações de Inteligência Artificial e desenvolvimento web, contando com o apoio de ferramentas de IA na sua elaboração.
 
 ---
 ## Capturas de Tela
