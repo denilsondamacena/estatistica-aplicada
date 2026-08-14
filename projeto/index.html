@@ -1,26 +1,3 @@
-<!--====================================================================
-DESENVOLVIDO POR: Denilson Silva Damacena
-ANO: 2026
---------------------------------------------------------------------
-⠀⠀⠀⠀⠀⢸⠓⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⢸⠀⠀⠑⢤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⢸⡆⠀⠀⠀⠙⢤⡷⣤⣦⣀⠤⠖⠚⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⣠⡿⠢⢄⡀⠀⡇⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⠸⠷⣶⠂⠀⠀⠀⣀⣀⠀⠀⠀
-⢸⣃⠀⠀⠉⠳⣷⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⠉⠉⠉⢉⡭⠋
-⠀⠘⣆⠀⠀⠀⠁⠀⢀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡴⠋⠀⠀
-⠀⠀⠘⣦⠆⠀⠀⢀⡎⢹⡀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⡀⣠⠔⠋⠀⠀⠀⠀
-⠀⠀⠀⡏⠀⠀⣆⠘⣄⠸⢧⠀⠀⠀⠀⢀⣠⠖⢻⠀⠀⠀⣿⢥⣄⣀⣀⣀⠀⠀
-⠀⠀⢸⠁⠀⠀⡏⢣⣌⠙⠚⠀⠀⠠⣖⡛⠀⣠⠏⠀⠀⠀⠇⠀⠀⠀⠀⢙⣣⠄
-⠀⠀⢸⡀⠀⠀⠳⡞⠈⢻⠶⠤⣄⣀⣈⣉⣉⣡⡔⠀⠀⢀⠀⠀⣀⡤⠖⠚⠀⠀
-⠀⠀⡼⣇⠀⠀⠀⠙⠦⣞⡀⠀⢀⡏⠀⢸⣣⠞⠀⠀⠀⡼⠚⠋⠁⠀⠀⠀⠀⠀
-⠀⢰⡇⠙⠀⠀⠀⠀⠀⠀⠉⠙⠚⠒⠚⠉⠀⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⢧⡀⠀⢠⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠙⣶⣶⣿⠢⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠉⠀⠀⠀⠙⢿⣳⠞⠳⡄⠀⠀⠀⢀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠹⣄⣀⡤⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-====================================================================-->
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -29,7 +6,7 @@ ANO: 2026
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estatística Aplicada</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" type="image/svg+xml" href="https://api.iconify.design/lucide:bar-chart-3.svg?color=%23ff00ff">
     <script>
         window.MathJax = {
@@ -89,7 +66,6 @@ ANO: 2026
                 <li><button class="menu-btn" onclick="loadContent(event, 11)">11. Fórmulas Estatísticas</button></li>
                 <li><button class="menu-btn" onclick="loadContent(event, 12)">12. Kit Recomendado Colab</button></li>
                 <li><button class="menu-btn" onclick="loadContent(event, 13)">13. Roteiro de Aprendizado</button></li>
-
             </ul>
         </nav>
 
@@ -177,14 +153,14 @@ ANO: 2026
                 <h3>Agregação e Operações</h3>
                 <pre class="code-box"><code>notas = [7, 8, 6, 9, 10]
 
-print("Quantidade (len):", len(notas))
-print("Soma (sum):", sum(notas))
-print("Maior valor (max):", max(notas))
-print("Menor valor (min):", min(notas))
-print("Valores ordenados (sorted):", sorted(notas))
-
-media = sum(notas) / len(notas)
-print("Média Aritmética:", media)</code></pre>
+                    print("Quantidade (len):", len(notas))
+                    print("Soma (sum):", sum(notas))
+                    print("Maior valor (max):", max(notas))
+                    print("Menor valor (min):", min(notas))
+                    print("Valores ordenados (sorted):", sorted(notas))
+                    
+                    media = sum(notas) / len(notas)
+                    print("Média Aritmética:", media)</code></pre>
             </section>
 
             <section id="content-3" class="content-section">
@@ -228,13 +204,13 @@ print("Média Aritmética:", media)</code></pre>
 
                 <pre class="code-box"><code>import statistics as statistics
 
-notas = [5, 6, 7, 7, 8, 9, 10]
-
-print("Média:", statistics.mean(notas))
-print("Mediana:", statistics.median(notas))
-print("Moda:", statistics.mode(notas))
-print("Variância Amostral:", statistics.variance(notas))
-print("Desvio Padrão Amostral:", statistics.stdev(notas))</code></pre>
+                    notas = [5, 6, 7, 7, 8, 9, 10]
+                    
+                    print("Média:", statistics.mean(notas))
+                    print("Mediana:", statistics.median(notas))
+                    print("Moda:", statistics.mode(notas))
+                    print("Variância Amostral:", statistics.variance(notas))
+                    print("Desvio Padrão Amostral:", statistics.stdev(notas))</code></pre>
             </section>
 
             <section id="content-4" class="content-section">
@@ -243,16 +219,16 @@ print("Desvio Padrão Amostral:", statistics.stdev(notas))</code></pre>
 
                 <pre class="code-box"><code>import numpy as np
 
-notas = np.array([5, 6, 7, 7, 8, 9, 10])
-
-print("Média:", np.mean(notas))
-print("Mediana:", np.median(notas))
-print("Mínimo / Máximo:", np.min(notas), "/", np.max(notas))
-
-print("Variância Amostral (ddof=1):", np.var(notas, ddof=1))
-print("Desvio Padrão Amostral (ddof=1):", np.std(notas, ddof=1))
-
-print("Quartil 50% (Mediana):", np.percentile(notas, 50))</code></pre>
+                    notas = np.array([5, 6, 7, 7, 8, 9, 10])
+                    
+                    print("Média:", np.mean(notas))
+                    print("Mediana:", np.median(notas))
+                    print("Mínimo / Máximo:", np.min(notas), "/", np.max(notas))
+                    
+                    print("Variância Amostral (ddof=1):", np.var(notas, ddof=1))
+                    print("Desvio Padrão Amostral (ddof=1):", np.std(notas, ddof=1))
+                    
+                    print("Quartil 50% (Mediana):", np.percentile(notas, 50))</code></pre>
             </section>
 
             <section id="content-5" class="content-section">
@@ -261,20 +237,20 @@ print("Quartil 50% (Mediana):", np.percentile(notas, 50))</code></pre>
 
                 <pre class="code-box"><code>import pandas as pd
 
-dados = {
-    "Aluno": ["Ana", "Bruno", "Carlos", "Daniela"],
-    "Nota": [8, 7, 9, 6],
-    "Faltas": [2, 0, 4, 1]
-}
-
-df = pd.DataFrame(dados)
-
-print(df.head(2))
-print(df.info())
-print(df.describe())
-
-print("Média de notas:", df["Nota"].mean())
-print("Frequência de faltas:\n", df["Faltas"].value_counts())</code></pre>
+                    dados = {
+                        "Aluno": ["Ana", "Bruno", "Carlos", "Daniela"],
+                        "Nota": [8, 7, 9, 6],
+                        "Faltas": [2, 0, 4, 1]
+                    }
+                    
+                    df = pd.DataFrame(dados)
+                    
+                    print(df.head(2))
+                    print(df.info())
+                    print(df.describe())
+                    
+                    print("Média de notas:", df["Nota"].mean())
+                    print("Frequência de faltas:\n", df["Faltas"].value_counts())</code></pre>
             </section>
 
             <section id="content-6" class="content-section">
@@ -283,8 +259,7 @@ print("Frequência de faltas:\n", df["Faltas"].value_counts())</code></pre>
 
                 <div class="interactive-chart-box">
                     <h3>📊 Manipulação de Gráfico em Tempo Real</h3>
-                    <p>Altere a frequência dos dados abaixo e clique em <b>"ATUALIZAR GRÁFICO"</b> para ver o Histograma
-                        se modificar:</p>
+                    <p>Altere a frequência dos dados abaixo e clique em <b>"ATUALIZAR GRÁFICO"</b> para ver o Histograma se modificar:</p>
 
                     <div class="chart-container">
                         <canvas id="matplotlibChart"></canvas>
@@ -324,32 +299,31 @@ print("Frequência de faltas:\n", df["Faltas"].value_counts())</code></pre>
 
                 <pre class="code-box"><code>import matplotlib.pyplot as plt
 
-notas = [5, 6, 6, 7, 7, 7, 8, 8, 9, 10]
-
-plt.figure(figsize=(6, 4))
-plt.hist(notas, bins=5, color='purple', edgecolor='yellow')
-plt.title("Distribuição das Notas")
-plt.xlabel("Nota")
-plt.ylabel("Frequência")
-plt.grid(True)
-plt.show()
-
-plt.boxplot(notas)
-plt.title("Boxplot de Notas")
-plt.show()</code></pre>
+                    notas = [5, 6, 6, 7, 7, 7, 8, 8, 9, 10]
+                    
+                    plt.figure(figsize=(6, 4))
+                    plt.hist(notas, bins=5, color='purple', edgecolor='yellow')
+                    plt.title("Distribuição das Notas")
+                    plt.xlabel("Nota")
+                    plt.ylabel("Frequência")
+                    plt.grid(True)
+                    plt.show()
+                    
+                    plt.boxplot(notas)
+                    plt.title("Boxplot de Notas")
+                    plt.show()</code></pre>
             </section>
 
             <section id="content-7" class="content-section">
                 <h2>7. Seaborn</h2>
-                <p>Interface gráfica de alto nível construída sobre o Matplotlib, focada em visualização estatística.
-                </p>
+                <p>Interface gráfica de alto nível construída sobre o Matplotlib, focada em visualização estatística.</p>
 
                 <pre class="code-box"><code>import seaborn as sns
-import pandas as pd
-
-df = pd.DataFrame({"Nota": [5, 6, 6, 7, 7, 7, 8, 8, 9, 10]})
-
-sns.histplot(data=df, x="Nota", kde=True, color="cyan")</code></pre>
+                    import pandas as pd
+                    
+                    df = pd.DataFrame({"Nota": [5, 6, 6, 7, 7, 7, 8, 8, 9, 10]})
+                    
+                    sns.histplot(data=df, x="Nota", kde=True, color="cyan")</code></pre>
             </section>
 
             <section id="content-8" class="content-section">
@@ -365,10 +339,10 @@ sns.histplot(data=df, x="Nota", kde=True, color="cyan")</code></pre>
 
                 <pre class="code-box"><code>import numpy as np
 
-dados_discretos = np.random.randint(low=0, high=11, size=20)
-dados_continuos = np.random.normal(loc=70, scale=10, size=100)
-
-print("Amostra aleatória normal (primeiros 5):", dados_continuos[:5])</code></pre>
+                    dados_discretos = np.random.randint(low=0, high=11, size=20)
+                    dados_continuos = np.random.normal(loc=70, scale=10, size=100)
+                    
+                    print("Amostra aleatória normal (primeiros 5):", dados_continuos[:5])</code></pre>
             </section>
 
             <section id="content-10" class="content-section">
@@ -396,9 +370,8 @@ print("Amostra aleatória normal (primeiros 5):", dados_continuos[:5])</code></p
             </section>
 
             <section id="content-11" class="content-section">
-                <h2>13. Fórmulas Estatísticas Essenciais</h2>
-                <p>Resumo das principais equações utilizadas na disciplina de Estatística Aplicada para análise
-                    descritiva e de variação.</p>
+                <h2>11. Fórmulas Estatísticas Essenciais</h2>
+                <p>Resumo das principais equações utilizadas na disciplina de Estatística Aplicada para análise descritiva e de variação.</p>
 
                 <h3>Medidas de Tendência Central</h3>
 
@@ -407,16 +380,16 @@ print("Amostra aleatória normal (primeiros 5):", dados_continuos[:5])</code></p
                     <p>Soma de todas as entradas de dados dividida pelo número total de entradas da população ($N$).</p>
                     <p style="text-align: center; margin: 15px 0;">$$\mu = \frac{\sum_{i=1}^{N} x_i}{N}$$</p>
                     <pre class="code-box"><code># Média Populacional em Python (Nativo e NumPy)
-dados = [10, 23, 32, 40, 57, 57, 61]
-
-# Opção 1: Python nativo
-media_pop = sum(dados) / len(dados)
-
-# Opção 2: NumPy
-import numpy as np
-media_pop_np = np.mean(dados)
-
-print("Média Populacional:", media_pop)</code></pre>
+                        dados = [10, 23, 32, 40, 57, 57, 61]
+                        
+                        # Opção 1: Python nativo
+                        media_pop = sum(dados) / len(dados)
+                        
+                        # Opção 2: NumPy
+                        import numpy as np
+                        media_pop_np = np.mean(dados)
+                        
+                        print("Média Populacional:", media_pop)</code></pre>
                 </div>
 
                 <div class="concept-block">
@@ -424,46 +397,43 @@ print("Média Populacional:", media_pop)</code></pre>
                     <p>Soma dos valores observados na amostra dividida pelo tamanho da amostra ($n$).</p>
                     <p style="text-align: center; margin: 15px 0;">$$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$$</p>
                     <pre class="code-box"><code># Média Amostral em Python
-import numpy as np
-
-amostra = [10, 23, 32, 40, 57, 57, 61]
-media_amostral = np.mean(amostra)
-
-print("Média Amostral:", media_amostral)</code></pre>
+                        import numpy as np
+                        
+                        amostra = [10, 23, 32, 40, 57, 57, 61]
+                        media_amostral = np.mean(amostra)
+                        
+                        print("Média Amostral:", media_amostral)</code></pre>
                 </div>
 
                 <div class="concept-block">
                     <h4>3. Média Ponderada</h4>
                     <p>Utilizada quando os valores possuem pesos ($p_i$) diferentes de importância.</p>
-                    <p style="text-align: center; margin: 15px 0;">$$\bar{x} = \frac{\sum_{i=1}^{N} p_i \cdot
-                        x_i}{\sum_{i=1}^{N} p_i}$$</p>
+                    <p style="text-align: center; margin: 15px 0;">$$\bar{x} = \frac{\sum_{i=1}^{N} p_i \cdot x_i}{\sum_{i=1}^{N} p_i}$$</p>
                     <pre class="code-box"><code># Média Ponderada em Python
-import numpy as np
-
-notas = [7, 8, 6]
-pesos = [2, 3, 5]
-
-# Cálculo via NumPy
-media_ponderada = np.average(notas, weights=pesos)
-
-print("Média Ponderada:", media_ponderada)</code></pre>
+                        import numpy as np
+                        
+                        notas = [7, 8, 6]
+                        pesos = [2, 3, 5]
+                        
+                        # Cálculo via NumPy
+                        media_ponderada = np.average(notas, weights=pesos)
+                        
+                        print("Média Ponderada:", media_ponderada)</code></pre>
                 </div>
 
                 <div class="concept-block">
                     <h4>4. Média para Dados Agrupados (Frequência)</h4>
-                    <p>Soma do produto de cada valor ($x_i$) ou ponto médio da classe pela sua respectiva frequência
-                        ($f_i$), dividida pela soma total das frequências.</p>
-                    <p style="text-align: center; margin: 15px 0;">$$\bar{x} = \frac{\sum_{i=1}^{k} f_i \cdot
-                        x_i}{\sum_{i=1}^{k} f_i}$$</p>
+                    <p>Soma do produto de cada valor ($x_i$) ou ponto médio da classe pela sua respectiva frequência ($f_i$), dividida pela soma total das frequências.</p>
+                    <p style="text-align: center; margin: 15px 0;">$$\bar{x} = \frac{\sum_{i=1}^{k} f_i \cdot x_i}{\sum_{i=1}^{k} f_i}$$</p>
                     <pre class="code-box"><code># Média para Tabela de Frequência em Python
-import numpy as np
-
-valores = np.array([0, 1, 2, 3, 5])       # Número de filhos (xi)
-frequencias = np.array([4, 5, 7, 3, 1])   # Número de famílias (fi)
-
-media_agrupada = np.sum(valores * frequencias) / np.sum(frequencias)
-
-print("Média de filhos por família:", media_agrupada)</code></pre>
+                        import numpy as np
+                        
+                        valores = np.array([0, 1, 2, 3, 5])       # Número de filhos (xi)
+                        frequencias = np.array([4, 5, 7, 3, 1])   # Número de famílias (fi)
+                        
+                        media_agrupada = np.sum(valores * frequencias) / np.sum(frequencias)
+                        
+                        print("Média de filhos por família:", media_agrupada)</code></pre>
                 </div>
 
                 <div class="concept-block">
@@ -478,174 +448,152 @@ print("Média de filhos por família:", media_agrupada)</code></pre>
                     </ul>
                     <p style="text-align: center; margin: 15px 0;">$$Md = L_i + (P - f_{ai}) \cdot \frac{h}{f_m}$$</p>
                     <pre class="code-box"><code># Mediana em Intervalo de Classe em Python
-Li = 66    # Limite inferior da classe mediana
-P = 44     # Posição (n / 2)
-f_ai = 34  # Frequência acumulada anterior
-fm = 20    # Frequência da classe mediana
-h = 4      # Amplitude do intervalo (ex: 70 - 66)
-
-mediana_classe = Li + (P - f_ai) * (h / fm)
-
-print("Mediana Interpolada:", mediana_classe)</code></pre>
+                        Li = 66    # Limite inferior da classe mediana
+                        P = 44     # Posição (n / 2)
+                        f_ai = 34  # Frequência acumulada anterior
+                        fm = 20    # Frequência da classe mediana
+                        h = 4      # Amplitude do intervalo (ex: 70 - 66)
+                        
+                        mediana_classe = Li + (P - f_ai) * (h / fm)
+                        
+                        print("Mediana Interpolada:", mediana_classe)</code></pre>
                 </div>
 
                 <h3>Medidas de Dispersão e Variação</h3>
 
                 <div class="concept-block">
                     <h4>6. Variância Populacional ($\sigma^2$) e Amostral ($S^2$)</h4>
-                    <p>Mede o quão distantes os valores estão em relação à média do conjunto de dados. Na amostral,
-                        divide-se por $n-1$ (graus de liberdade) para correção estatística.</p>
-                    <p style="text-align: center; margin: 15px 0;">$$\sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N}
-                        \quad \text{(Populacional)}$$</p>
-                    <p style="text-align: center; margin: 15px 0;">$$S^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n -
-                        1} \quad \text{(Amostral)}$$</p>
+                    <p>Mede o quão distantes os valores estão em relação à média do conjunto de dados. Na amostral, divide-se por $n-1$ (graus de liberdade) para correção estatística.</p>
+                    <p style="text-align: center; margin: 15px 0;">$$\sigma^2 = \frac{\sum_{i=1}^{N} (x_i - \mu)^2}{N} \quad \text{(Populacional)}$$</p>
+                    <p style="text-align: center; margin: 15px 0;">$$S^2 = \frac{\sum_{i=1}^{n} (x_i - \bar{x})^2}{n - 1} \quad \text{(Amostral)}$$</p>
                     <pre class="code-box"><code># Variância em Python
-import numpy as np
-
-dados = [41, 38, 39, 45, 47, 41, 44, 41, 37, 42]
-
-# Variância Populacional (ddof=0)
-var_pop = np.var(dados, ddof=0)
-
-# Variância Amostral (ddof=1)
-var_amostral = np.var(dados, ddof=1)
-
-print(f"Variância Populacional: {var_pop:.2f}")
-print(f"Variância Amostral: {var_amostral:.2f}")</code></pre>
+                        import numpy as np
+                        
+                        dados = [41, 38, 39, 45, 47, 41, 44, 41, 37, 42]
+                        
+                        # Variância Populacional (ddof=0)
+                        var_pop = np.var(dados, ddof=0)
+                        
+                        # Variância Amostral (ddof=1)
+                        var_amostral = np.var(dados, ddof=1)
+                        
+                        print(f"Variância Populacional: {var_pop:.2f}")
+                        print(f"Variância Amostral: {var_amostral:.2f}")</code></pre>
                 </div>
 
                 <div class="concept-block">
                     <h4>7. Desvio Padrão Populacional ($\sigma$) e Amostral ($S$)</h4>
-                    <p>Indica o desvio médio dos dados em relação à média, estando na mesma unidade de medida dos dados
-                        originais (raiz quadrada da variância).</p>
-                    <p style="text-align: center; margin: 15px 0;">$$\sigma = \sqrt{\sigma^2} \quad
-                        \text{(Populacional)} \qquad S = \sqrt{S^2} \quad \text{(Amostral)}$$</p>
+                    <p>Indica o desvio médio dos dados em relação à média, estando na mesma unidade de medida dos dados originais (raiz quadrada da variância).</p>
+                    <p style="text-align: center; margin: 15px 0;">$$\sigma = \sqrt{\sigma^2} \quad \text{(Populacional)} \qquad S = \sqrt{S^2} \quad \text{(Amostral)}$$</p>
                     <pre class="code-box"><code># Desvio Padrão em Python
-import numpy as np
-
-dados = [41, 38, 39, 45, 47, 41, 44, 41, 37, 42]
-
-# Desvio Padrão Populacional (ddof=0)
-std_pop = np.std(dados, ddof=0)
-
-# Desvio Padrão Amostral (ddof=1)
-std_amostral = np.std(dados, ddof=1)
-
-print(f"Desvio Padrão Populacional: {std_pop:.2f}")
-print(f"Desvio Padrão Amostral: {std_amostral:.2f}")</code></pre>
+                        import numpy as np
+                        
+                        dados = [41, 38, 39, 45, 47, 41, 44, 41, 37, 42]
+                        
+                        # Desvio Padrão Populacional (ddof=0)
+                        std_pop = np.std(dados, ddof=0)
+                        
+                        # Desvio Padrão Amostral (ddof=1)
+                        std_amostral = np.std(dados, ddof=1)
+                        
+                        print(f"Desvio Padrão Populacional: {std_pop:.2f}")
+                        print(f"Desvio Padrão Amostral: {std_amostral:.2f}")</code></pre>
                 </div>
 
                 <div class="concept-block">
                     <h4>8. Coeficiente de Variação ($CV$)</h4>
-                    <p>Mede a variabilidade relativa dos dados expressa em porcentagem (razão entre desvio padrão e a
-                        média).</p>
-                    <p style="text-align: center; margin: 15px 0;">$$CV = \frac{\sigma}{\mu} \quad \left(\text{ou } CV =
-                        \frac{S}{\bar{x}}\right)$$</p>
+                    <p>Mede a variabilidade relativa dos dados expressa em porcentagem (razão entre desvio padrão e a média).</p>
+                    <p style="text-align: center; margin: 15px 0;">$$CV = \frac{\sigma}{\mu} \quad \left(\text{ou } CV = \frac{S}{\bar{x}}\right)$$</p>
                     <pre class="code-box"><code># Coeficiente de Variação em Python
-import numpy as np
-
-dados = [41, 38, 39, 45, 47, 41, 44, 41, 37, 42]
-
-media = np.mean(dados)
-desvio = np.std(dados, ddof=1)  # Usando desvio amostral
-
-cv = (desvio / media) * 100
-
-print(f"Coeficiente de Variação: {cv:.2f}%")</code></pre>
+                        import numpy as np
+                        
+                        dados = [41, 38, 39, 45, 47, 41, 44, 41, 37, 42]
+                        
+                        media = np.mean(dados)
+                        desvio = np.std(dados, ddof=1)  # Usando desvio amostral
+                        
+                        cv = (desvio / media) * 100
+                        
+                        print(f"Coeficiente de Variação: {cv:.2f}%")</code></pre>
                 </div>
 
                 <h3>Posição Relativa e Outliers</h3>
 
                 <div class="concept-block">
                     <h4>9. Intervalo Interquartil ($IQR$)</h4>
-                    <p>Diferença entre o terceiro quartil ($Q_3$) e o primeiro quartil ($Q_1$), cobrindo os $50\%$
-                        centrais dos dados.</p>
+                    <p>Diferença entre o terceiro quartil ($Q_3$) e o primeiro quartil ($Q_1$), cobrindo os $50\%$ centrais dos dados.</p>
                     <p style="text-align: center; margin: 15px 0;">$$IQR = Q_3 - Q_1$$</p>
                     <pre class="code-box"><code># Amplitude Interquartil (IQR) em Python
-import numpy as np
-
-dados = [5, 7, 9, 10, 11, 13, 14, 16, 17, 18, 18, 20, 21, 37]
-
-q1 = np.percentile(dados, 25)
-q3 = np.percentile(dados, 75)
-iqr = q3 - q1
-
-print(f"Q1: {q1} | Q3: {q3} | IQR: {iqr}")</code></pre>
+                        import numpy as np
+                        
+                        dados = [5, 7, 9, 10, 11, 13, 14, 16, 17, 18, 18, 20, 21, 37]
+                        
+                        q1 = np.percentile(dados, 25)
+                        q3 = np.percentile(dados, 75)
+                        iqr = q3 - q1
+                        
+                        print(f"Q1: {q1} | Q3: {q3} | IQR: {iqr}")</code></pre>
                 </div>
 
                 <div class="concept-block">
                     <h4>10. Limites para Identificação de Outliers</h4>
-                    <p>Fórmula para definir a faixa de valores aceitáveis no BoxPlot. Valores além destes limites são
-                        considerados dados discrepantes (outliers):</p>
+                    <p>Fórmula para definir a faixa de valores aceitáveis no BoxPlot. Valores além destes limites são considerados dados discrepantes (outliers):</p>
                     <p style="text-align: center; margin: 10px 0;">$$\text{Limite Superior} = Q_3 + 1,5 \cdot IQR$$</p>
                     <p style="text-align: center; margin: 10px 0;">$$\text{Limite Inferior} = Q_1 - 1,5 \cdot IQR$$</p>
                     <pre class="code-box"><code># Detecção de Outliers em Python
                         import numpy as np
-
+                        
                         dados = np.array([5, 7, 9, 10, 11, 13, 14, 16, 17, 18, 18, 20, 21, 125, 130])
-
+                        
                         q1 = np.percentile(dados, 25)
                         q3 = np.percentile(dados, 75)
                         iqr = q3 - q1
-
+                        
                         limite_inferior = q1 - 1.5 * iqr
                         limite_superior = q3 + 1.5 * iqr
-
+                        
                         outliers = dados[(dados < limite_inferior) | (dados > limite_superior)]
-
+                        
                         print(f"Limite Inferior: {limite_inferior}")
                         print(f"Limite Superior: {limite_superior}")
                         print(f"Outliers Encontrados: {outliers}")</code></pre>
                 </div>
+            </section>
 
-                <section id="content-12" class="content-section">
-                    <h2>11. O "Kit" Padrão de Importação para Google Colab</h2>
-                    <p>Cabeçalho padrão recomendado para iniciar quase todos os notebooks da disciplina:</p>
+            <section id="content-12" class="content-section">
+                <h2>12. O "Kit" Padrão de Importação para Google Colab</h2>
+                <p>Cabeçalho padrão recomendado para iniciar quase todos os notebooks da disciplina:</p>
 
-                    <pre class="code-box"><code>
-                    import numpy as np
+                <pre class="code-box"><code>import numpy as np
                     import pandas as pd
                     import matplotlib.pyplot as plt
                     import seaborn as sns
                     import statistics as statistics
                     from scipy import stats
-
+                    
                     plt.style.use('seaborn-v0_8-whitegrid')
                     %matplotlib inline</code></pre>
 
-                    <div class="note-box">
-                        <strong>⚠️ Dica importante:</strong> Evite utilizar <code>import statistics as stats</code> e
-                        <code>from scipy import stats</code> no mesmo arquivo para evitar sobreposição de nomes de
-                        aliases.
-                    </div>
-                </section>
+                <div class="note-box">
+                    <strong>⚠️ Dica importante:</strong> Evite utilizar <code>import statistics as stats</code> e <code>from scipy import stats</code> no mesmo arquivo para evitar sobreposição de nomes de aliases.
+                </div>
+            </section>
 
-                <section id="content-13" class="content-section">
-                    <h2>12. Roteiro de Aprendizado Recomendado em ADS</h2>
-                    <ol class="roadmap-list">
-                        <li><strong>Passo 1:</strong> Lógica básica no Python (Variáveis, Listas, Estruturas de
-                            controle)
-                        </li>
-                        <li><strong>Passo 2:</strong> Funções nativas de agregação (<code>sum</code>, <code>len</code>,
-                            <code>max</code>, <code>min</code>)
-                        </li>
-                        <li><strong>Passo 3:</strong> Estatística descritiva elementar com a biblioteca
-                            <code>statistics</code>
-                        </li>
-                        <li><strong>Passo 4:</strong> Vetores e cálculos numéricos com <code>NumPy</code></li>
-                        <li><strong>Passo 5:</strong> Leitura e manipulação de tabelas via <code>Pandas</code></li>
-                        <li><strong>Passo 6 & 7:</strong> Construção e interpretação visual com <code>Matplotlib</code>
-                            e
-                            <code>Seaborn</code>
-                        </li>
-                        <li><strong>Passo 8 & 9:</strong> Simulações aleatórias e Modelagem Probabilística</li>
-                        <li><strong>Passo 10 & 11:</strong> Testes de hipóteses e Inferência com <code>SciPy</code></li>
-                        <li><strong>Passo 12:</strong> Análise de Regressão e projetos integrados com conjuntos de dados
-                            reais</li>
-                    </ol>
-                </section>
+            <section id="content-13" class="content-section">
+                <h2>13. Roteiro de Aprendizado Recomendado em ADS</h2>
+                <ol class="roadmap-list">
+                    <li><strong>Passo 1:</strong> Lógica básica no Python (Variáveis, Listas, Estruturas de controle)</li>
+                    <li><strong>Passo 2:</strong> Funções nativas de agregação (<code>sum</code>, <code>len</code>, <code>max</code>, <code>min</code>)</li>
+                    <li><strong>Passo 3:</strong> Estatística descritiva elementar com a biblioteca <code>statistics</code></li>
+                    <li><strong>Passo 4:</strong> Vetores e cálculos numéricos com <code>NumPy</code></li>
+                    <li><strong>Passo 5:</strong> Leitura e manipulação de tabelas via <code>Pandas</code></li>
+                    <li><strong>Passo 6 & 7:</strong> Construção e interpretação visual com <code>Matplotlib</code> e <code>Seaborn</code></li>
+                    <li><strong>Passo 8 & 9:</strong> Simulações aleatórias e Modelagem Probabilística</li>
+                    <li><strong>Passo 10 & 11:</strong> Testes de hipóteses e Inferência com <code>SciPy</code></li>
+                    <li><strong>Passo 12:</strong> Análise de Regressão e projetos integrados com conjuntos de dados reais</li>
+                </ol>
 
-                <div class="dos-terminal">
+                <div class="dos-terminal" style="margin-top: 25px;">
                     <div class="dos-header">
                         <span>MS-DOS Prompt - Python STATS v1.0</span>
                         <span id="sound-toggle" style="cursor:pointer;" onclick="toggleSound()">🔊 SOM [ON]</span>
@@ -660,17 +608,19 @@ print(f"Q1: {q1} | Q3: {q3} | IQR: {iqr}")</code></pre>
                         C:\> Prontos para execução...
                     </div>
                 </div>
+            </section>
+
         </main>
     </div>
 
     <footer class="footer-90s">
         <p>Denilson Silva Damacena | 2026</p>
         <p style="font-size: 14px; margin-top: 5px; opacity: 0.9;">
-        Projeto acadêmico para estudo de IA, desenvolvido com auxílio de ferramentas de Inteligência Artificial.
-    </p>
+            Projeto acadêmico para estudo de IA, desenvolvido com auxílio de ferramentas de Inteligência Artificial.
+        </p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
